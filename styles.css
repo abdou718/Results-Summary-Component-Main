@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hanken Grotesk';
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .card {
+    padding: 0px;
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+  }
+  
+  
+  .Result{
+    display: flex;
+    width: 50%;
+    height:auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+    max-width: 50%;
+    max-height: 100%;
+    padding: 22px;
+    border-radius: 15px;
+    color: white;
+  }
+  .Result h1{
+    text-align: center;
+    color: hsl(221, 100%, 96%);
+  
+    font-weight: 500;
+    opacity: 0.5;
+    margin-bottom: 10px;
+  }
+  .The-Score{ 
+    display: flex; 
+    flex-direction: column;  
+    justify-content: center;
+    max-width: 100%;
+    max-height: 100%;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+  }
+  .The-Score h1{
+    font-size: 72px;
+    font-weight: 900;
+    color:#ffffff;
+  
+  }
+  .The-Score p{
+    font-weight: 700;
+    opacity: 0.5;
+  }
+  .Status{
+    display: inline-block;
+    padding: 32px;
+  }
+  .Status h2{
+    text-align: center;
+  }
+  .Status p{
+  text-align:center;
+    margin-left: auto;
+    margin-right:auto;
+    width: 100%;
+    font-size: 15px;
+    color: hsl(241, 100%, 89%);
+  }
+  .Summary{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: auto;
+    max-width: 50%;
+    max-height: 100%;
+    padding: 15px;
+    background-color:hsla(0, 0%, 100%) ;
+    border-radius: 15px;
+  }
+  .Summary h1{
+    margin-bottom: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  .test-type{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  
+  }
+  .test-type h2{
+    text-align: left;
+    padding-left: 5px;
+    width: 50%;
+  }
+  .test-type .score {
+    text-align:right;
+    width: 50%;
+    margin: auto;
+  }
+  .test-type .score p strong{
+    color:black;
+  }
+  .test-type .score p {
+    color:hsl(224, 30%, 27%);
+  }
+  
+  .Reaction {
+    background-color: hsla(0, 100%, 67%,.1);
+  }
+  .Reaction h2{
+   color: hsl(0, 100%, 67%);
+  }
+  .Memory {
+    background-color: hsla(39, 100%, 56%, .1);
+  }
+  .Memory h2{
+    color: hsl(39, 100%, 56%);
+  }
+  .Verbal {
+    background-color: hsla(166, 100%, 37%, .1);
+  }
+  .Verbal h2{
+    color: hsl(166, 100%, 37%);
+  }
+  .Visual {
+    background-color: hsla(234, 85%, 45%, .1);
+  }
+  .Visual h2{
+    color: hsl(234, 85%, 45%);
+  }
+  .button {
+    background-color: hsl(224, 30%, 27%);
+    color: white;
+    border-radius: 30px;
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 16.5px;
+    border-color: transparent;
+  
+  }
+  .button:hover{
+    background-image: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+    border-color: transparent;
+  }
+  /* Styles for small devices (phones, 600px and down) */
+  @media only screen and (max-width: 600px) {
+    .card {
+      width:fit-content;
+      height: fit-content;
+      flex-direction: column;
+    }
+  
+    .Result, .Summary {
+      width: 100vh;
+      height: 50vh;
+        padding: 0 50px;
+    }
+    .Result{
+        border-bottom-right-radius:40px ;
+        border-bottom-left-radius: 40px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+    .Status h2{
+        margin-bottom: 10px;
+    };
+    .Result h1{
+       font-size: 2rem
+    }
+    .The-Score h1{
+      font-size: 4rem;
+    }
+    .button {
+      width: 100%;
+    }
+  }
+  
+  /* Styles for tablets (portrait) */
+  @media screen and (min-width: 830px){
+    .card{
+        display: flex;
+        max-width: 100%;
+        margin: 7% auto;
+    }
+    .Result,
+    .Summary{
+        flex-basis: 50%;
+    }
+    .result{
+        border-radius: 30px;
+    }
+  }
